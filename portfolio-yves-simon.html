@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Yves Simon, Conseiller Emploi et Évolution Professionnelle en reconversion. Découvrez son parcours, ses compétences et ses projets." />
+  <title>Yves Simon – Conseiller Emploi &amp; Évolution Professionnelle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+  <!-- Skip link RGAA -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="main-nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" onclick="showPage('accueil')" aria-label="Accueil - Yves Simon">Yves <span>Simon</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu de navigation" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#" onclick="showPage('accueil')" data-page="accueil" class="active" aria-current="page">Accueil</a></li>
+        <li><a href="#" onclick="showPage('parcours')" data-page="parcours">Parcours</a></li>
+        <li><a href="#" onclick="showPage('projets')" data-page="projets">Projets</a></li>
+        <li><a href="#" onclick="showPage('contact')" data-page="contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ======================== PAGE ACCUEIL ======================== -->
+    <div id="page-accueil" class="page active" aria-label="Page d'accueil">
+
+      <!-- HERO -->
+      <header id="hero" role="banner">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge" aria-label="Disponible">En recherche active</div>
+            <h1 class="hero-title">
+              Yves Simon
+              <span>Conseiller Emploi &amp;<br>Évolution Professionnelle</span>
+            </h1>
+            <p class="hero-subtitle">
+              Passionné par l'accompagnement humain, je guide les personnes vers un épanouissement professionnel durable en mobilisant écoute, expertise et outils adaptés.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-gold" onclick="showPage('contact')">Prendre contact</button>
+              <button class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.5)" onclick="showPage('parcours')">Mon parcours</button>
+            </div>
+            <div class="hero-stats" role="list" aria-label="Statistiques clés">
+              <div class="stat-item" role="listitem">
+                <div class="stat-num" aria-label="7 ans d'expérience terrain">7+</div>
+                <div class="stat-label">Ans d'expérience<br>terrain</div>
+              </div>
+              <div class="stat-item" role="listitem">
+                <div class="stat-num" aria-label="3 formations diplômantes">3</div>
+                <div class="stat-label">Formations<br>diplômantes</div>
+              </div>
+              <div class="stat-item" role="listitem">
+                <div class="stat-num" aria-label="100% engagement">100%</div>
+                <div class="stat-label">Engagé &amp;<br>disponible</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-photo" aria-hidden="true">
+            <div class="hero-photo-frame">
+              <img src="./assets/img/Yves-Simon-Photo-compress.png"
+                   alt="Portrait professionnel - Conseiller emploi"
+                   width="340" height="420"
+                   loading="lazy" />
+              <div class="hero-photo-badge">
+                🎯 CEP RNCP Niv. 5
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- VALEURS -->
+      <section id="values" class="section" aria-labelledby="values-title">
+        <div class="container">
+          <div class="text-center">
+            <span class="label">Ma philosophie</span>
+            <h2 id="values-title" class="section-title">Ce qui guide mon accompagnement</h2>
+            <div class="divider divider-center" role="presentation"></div>
+          </div>
+          <div class="values-grid" role="list">
+            <div class="value-card reveal" role="listitem">
+              <div class="value-icon" aria-hidden="true">👂</div>
+              <h3>Écoute active</h3>
+              <p>Comprendre profondément chaque situation avant d'agir, sans jugement.</p>
+            </div>
+            <div class="value-card reveal reveal-delay-1" role="listitem">
+              <div class="value-icon" aria-hidden="true">🎯</div>
+              <h3>Personnalisation</h3>
+              <p>Adapter chaque parcours aux besoins réels et au niveau d'autonomie.</p>
+            </div>
+            <div class="value-card reveal reveal-delay-2" role="listitem">
+              <div class="value-icon" aria-hidden="true">🌱</div>
+              <h3>Développement durable</h3>
+              <p>Viser un épanouissement professionnel sur le long terme.</p>
+            </div>
+            <div class="value-card reveal reveal-delay-3" role="listitem">
+              <div class="value-icon" aria-hidden="true">🤝</div>
+              <h3>Bienveillance</h3>
+              <p>Maintenir une posture de neutralité et de soutien tout au long du parcours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPÉTENCES -->
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <span class="label label-gold">Compétences clés</span>
+          <h2 id="skills-title" class="section-title" style="color:#fff">Mon expertise au service des actifs</h2>
+          <div class="divider" role="presentation"></div>
+          <p class="skills-intro">Une combinaison unique d'expérience terrain, de formation technique et de posture relationnelle pour un accompagnement complet.</p>
+          <div class="skills-grid">
+            <div class="skill-card reveal" tabindex="0">
+              <div class="skill-card-icon" aria-hidden="true">📊</div>
+              <div class="skill-card-title">Expertise Marché &amp; Veille</div>
+              <div class="skill-card-desc">Analyse du marché de l'emploi, identification des tendances sectorielles et des opportunités.</div>
+              <div class="skill-tags" role="list" aria-label="Mots-clés">
+                <span class="skill-tag" role="listitem">Analyse</span>
+                <span class="skill-tag" role="listitem">Veille</span>
+                <span class="skill-tag" role="listitem">Marché</span>
+              </div>
+            </div>
+            <div class="skill-card reveal reveal-delay-1" tabindex="0">
+              <div class="skill-card-icon" aria-hidden="true">🧭</div>
+              <div class="skill-card-title">Accompagnement CEP</div>
+              <div class="skill-card-desc">Construction et suivi de plans d'action individualisés avec indicateurs de progression.</div>
+              <div class="skill-tags" role="list" aria-label="Mots-clés">
+                <span class="skill-tag" role="listitem">CEP</span>
+                <span class="skill-tag" role="listitem">Bilan</span>
+                <span class="skill-tag" role="listitem">Accompagnement</span>
+              </div>
+            </div>
+            <div class="skill-card reveal reveal-delay-2" tabindex="0">
+              <div class="skill-card-icon" aria-hidden="true">🖥️</div>
+              <div class="skill-card-title">Pilotage &amp; Outils Digitaux</div>
+              <div class="skill-card-desc">Animation d'ateliers thématiques et maîtrise des outils de recherche d'emploi numériques.</div>
+              <div class="skill-tags" role="list" aria-label="Mots-clés">
+                <span class="skill-tag" role="listitem">Digital</span>
+                <span class="skill-tag" role="listitem">Ateliers</span>
+                <span class="skill-tag" role="listitem">Innovation</span>
+              </div>
+            </div>
+            <div class="skill-card reveal reveal-delay-3" tabindex="0">
+              <div class="skill-card-icon" aria-hidden="true">🔍</div>
+              <div class="skill-card-title">Diagnostic de situation</div>
+              <div class="skill-card-desc">Évaluation des freins périphériques et des leviers pour chaque personne accompagnée.</div>
+              <div class="skill-tags" role="list" aria-label="Mots-clés">
+                <span class="skill-tag" role="listitem">Diagnostic</span>
+                <span class="skill-tag" role="listitem">Analyse</span>
+                <span class="skill-tag" role="listitem">Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TÉMOIGNAGES -->
+      <section id="testimonials" class="section" aria-labelledby="testimonials-title">
+        <div class="container">
+          <div class="text-center">
+            <span class="label">Témoignages</span>
+            <h2 id="testimonials-title" class="section-title">Ce que disent ceux qui m'ont côtoyé</h2>
+            <div class="divider divider-center" role="presentation"></div>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card reveal" aria-label="Témoignage de Sophie M.">
+              <div class="testimonial-quote" aria-hidden="true">"</div>
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+              <p class="testimonial-text">Yves possède une capacité rare à mettre les gens en confiance. Son approche structurée et bienveillante m'a permis de retrouver un emploi en moins de 3 mois.</p>
+              <div class="testimonial-author">
+                <img class="testimonial-avatar"
+                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=60"
+                     alt="Portrait de Sophie M." width="48" height="48" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Sophie M.</div>
+                  <div class="testimonial-role">Ancienne bénéficiaire – Reconversion réussie</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card reveal reveal-delay-1" aria-label="Témoignage de Marc D., formateur">
+              <div class="testimonial-quote" aria-hidden="true">"</div>
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+              <p class="testimonial-text">En stage avec lui lors de mon PMSMP, j'ai pu observer une vraie rigueur professionnelle et une pédagogie adaptée à chaque profil. Un futur excellent conseiller.</p>
+              <div class="testimonial-author">
+                <img class="testimonial-avatar"
+                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=60"
+                     alt="Portrait de Marc D." width="48" height="48" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Marc D.</div>
+                  <div class="testimonial-role">Formateur – ID Formation Armentières</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card reveal reveal-delay-2" aria-label="Témoignage de Isabelle R., responsable RH">
+              <div class="testimonial-quote" aria-hidden="true">"</div>
+              <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+              <p class="testimonial-text">Sa polyvalence est un vrai atout : le terrain, la technique et le relationnel sont parfaitement équilibrés. Yves sait expliquer des notions complexes de façon très accessible.</p>
+              <div class="testimonial-author">
+                <img class="testimonial-avatar"
+                     src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop&q=60"
+                     alt="Portrait d'Isabelle R." width="48" height="48" loading="lazy" />
+                <div>
+                  <div class="testimonial-name">Isabelle R.</div>
+                  <div class="testimonial-role">Responsable RH – Partenaire formation</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta-home" aria-label="Appel à l'action">
+        <h2>Prêt à collaborer&nbsp;?</h2>
+        <p>Vous cherchez un conseiller emploi motivé, en cours de certification RNCP Niv. 5 ? Contactez-moi pour échanger sur votre projet.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+          <button class="btn btn-gold" onclick="showPage('contact')">Prendre contact</button>
+          <button class="btn btn-white" onclick="showPage('projets')">Voir mes projets</button>
+        </div>
+      </section>
+
+    </div><!-- /page-accueil -->
+
+
+    <!-- ======================== PAGE PARCOURS ======================== -->
+    <div id="page-parcours" class="page" aria-label="Page Formations et Expériences">
+      <header class="parcours-hero">
+        <div class="container">
+          <span class="label label-gold">Mon histoire</span>
+          <h1>Formations &amp; Expériences</h1>
+          <p>Un parcours atypique et enrichissant, du terrain à l'accompagnement humain.</p>
+        </div>
+      </header>
+
+      <!-- Formations -->
+      <section class="section timeline-section" aria-labelledby="formations-title">
+        <div class="container">
+          <span class="label">Diplômes &amp; Certifications</span>
+          <h2 id="formations-title" class="section-title">Formations</h2>
+          <div class="divider" role="presentation"></div>
+          <div class="timeline" role="list">
+            <div class="timeline-item reveal" role="listitem">
+              <div class="timeline-dot" aria-hidden="true">🎓</div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 – 2026</span>
+                <h3>Conseiller emploi et évolution professionnelle</h3>
+                <div class="timeline-org">Certificat RNCP Niv. 5 – OpenClassrooms</div>
+                <p class="timeline-desc">Formation en cours. Acquisition des compétences en accompagnement CEP, techniques de recherche d'emploi et dispositifs de formation professionnelle.</p>
+                <div class="timeline-tags" role="list" aria-label="Compétences acquises">
+                  <span class="timeline-tag" role="listitem">CEP</span>
+                  <span class="timeline-tag" role="listitem">RNCP 5</span>
+                  <span class="timeline-tag" role="listitem">Formation professionnelle</span>
+                  <span class="timeline-tag" role="listitem">E-learning</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item reveal" role="listitem">
+              <div class="timeline-dot" aria-hidden="true">🌿</div>
+              <div class="timeline-content">
+                <span class="timeline-date">2019 – 2020</span>
+                <h3>CAPa Agricole Jardinier Paysagiste</h3>
+                <div class="timeline-org">CFPPA des Flandres – Lomme</div>
+                <p class="timeline-desc">Formation professionnelle en aménagement paysager, gestion des espaces verts et techniques horticoles. Développement du sens de l'organisation et du travail en équipe.</p>
+                <div class="timeline-tags" role="list" aria-label="Compétences acquises">
+                  <span class="timeline-tag" role="listitem">Paysagisme</span>
+                  <span class="timeline-tag" role="listitem">Gestion projet</span>
+                  <span class="timeline-tag" role="listitem">Travail terrain</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item reveal" role="listitem">
+              <div class="timeline-dot" aria-hidden="true">⚡</div>
+              <div class="timeline-content">
+                <span class="timeline-date">2011</span>
+                <h3>BAC Professionnel Électrotechnique</h3>
+                <div class="timeline-org">Lycée Jacquard – Caudry</div>
+                <p class="timeline-desc">Formation technique en électrotechnique. Développement de la rigueur, de la méthode et de la capacité à résoudre des problèmes complexes.</p>
+                <div class="timeline-tags" role="list" aria-label="Compétences acquises">
+                  <span class="timeline-tag" role="listitem">Technique</span>
+                  <span class="timeline-tag" role="listitem">Rigueur</span>
+                  <span class="timeline-tag" role="listitem">Méthode</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expériences -->
+      <section class="section" style="background:var(--off-white)" aria-labelledby="exp-title">
+        <div class="container">
+          <span class="label">Expériences professionnelles</span>
+          <h2 id="exp-title" class="section-title">Parcours professionnel</h2>
+          <div class="divider" role="presentation"></div>
+          <div class="timeline" role="list">
+            <div class="timeline-item reveal" role="listitem">
+              <div class="timeline-dot" aria-hidden="true">🧑‍🏫</div>
+              <div class="timeline-content">
+                <span class="timeline-date">Février 2025 – Présent</span>
+                <h3>Stagiaire PMSMP – Formateur adultes</h3>
+                <div class="timeline-org">ID Formation – Armentières</div>
+                <p class="timeline-desc">Mise en situation professionnelle en milieu réel. Animation de séquences de formation pour adultes, accompagnement individualisé, co-construction de parcours pédagogiques.</p>
+                <div class="timeline-tags" role="list" aria-label="Compétences acquises">
+                  <span class="timeline-tag" role="listitem">Formation adultes</span>
+                  <span class="timeline-tag" role="listitem">Animation</span>
+                  <span class="timeline-tag" role="listitem">Pédagogie</span>
+                  <span class="timeline-tag" role="listitem">PMSMP</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item reveal" role="listitem">
+              <div class="timeline-dot" aria-hidden="true">🌳</div>
+              <div class="timeline-content">
+                <span class="timeline-date">2021 – 2023</span>
+                <h3>Paysagiste – CDDI &amp; Suppléant d'équipe</h3>
+                <div class="timeline-org">Orme Activités – Hazebrouck</div>
+                <p class="timeline-desc">Direction d'équipe (Mars 2022 – Fév. 2023), gestion d'espaces verts, coordination de chantiers. Expériences précédentes : Stage Jardinier Paysagiste à Lambersart (Oct. 2021), Agent espaces verts (Mars 2021 – Mars 2022).</p>
+                <div class="timeline-tags" role="list" aria-label="Compétences acquises">
+                  <span class="timeline-tag" role="listitem">Management</span>
+                  <span class="timeline-tag" role="listitem">Coordination</span>
+                  <span class="timeline-tag" role="listitem">Terrain</span>
+                  <span class="timeline-tag" role="listitem">CDDI</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item reveal" role="listitem">
+              <div class="timeline-dot" aria-hidden="true">🌱</div>
+              <div class="timeline-content">
+                <span class="timeline-date">2019 – 2020</span>
+                <h3>Jardinier Paysagiste Stagiaire</h3>
+                <div class="timeline-org">Stage EPSM Lille Métropole – Armentières</div>
+                <p class="timeline-desc">Stage pratique en milieu hospitalier. Entretien et aménagement des espaces verts, travail en équipe pluridisciplinaire, respect des protocoles spécifiques.</p>
+                <div class="timeline-tags" role="list" aria-label="Compétences acquises">
+                  <span class="timeline-tag" role="listitem">Stage</span>
+                  <span class="timeline-tag" role="listitem">Milieu hospitalier</span>
+                  <span class="timeline-tag" role="listitem">Aménagement</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item reveal" role="listitem">
+              <div class="timeline-dot" aria-hidden="true">🥕</div>
+              <div class="timeline-content">
+                <span class="timeline-date">2016 – 2018</span>
+                <h3>Maraîcher Bio Stagiaire &amp; Ouvrier Agricole</h3>
+                <div class="timeline-org">Le champs des reinettes (Ennevelin, 2018) – Ferme du Pont d'Achelles (Nieppe, 2016)</div>
+                <p class="timeline-desc">Expériences agricoles variées : maraîchage biologique et travaux agricoles saisonniers. Développement de la résistance physique, du sens du terrain et de l'adaptabilité.</p>
+                <div class="timeline-tags" role="list" aria-label="Compétences acquises">
+                  <span class="timeline-tag" role="listitem">Agriculture</span>
+                  <span class="timeline-tag" role="listitem">Bio</span>
+                  <span class="timeline-tag" role="listitem">Adaptabilité</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Soft Skills -->
+      <section class="section softskills-section" aria-labelledby="softskills-title">
+        <div class="container">
+          <div class="text-center">
+            <span class="label">Savoir-être</span>
+            <h2 id="softskills-title" class="section-title">Soft Skills</h2>
+            <div class="divider divider-center" role="presentation"></div>
+          </div>
+          <div class="softskills-grid" role="list">
+            <div class="softskill-item reveal" role="listitem"><span class="softskill-icon" aria-hidden="true">👂</span><span class="softskill-name">Écoute active &amp; Empathie</span></div>
+            <div class="softskill-item reveal reveal-delay-1" role="listitem"><span class="softskill-icon" aria-hidden="true">⚖️</span><span class="softskill-name">Neutralité &amp; Bienveillance</span></div>
+            <div class="softskill-item reveal reveal-delay-2" role="listitem"><span class="softskill-icon" aria-hidden="true">💬</span><span class="softskill-name">Aisance relationnelle</span></div>
+            <div class="softskill-item reveal" role="listitem"><span class="softskill-icon" aria-hidden="true">🧩</span><span class="softskill-name">Analyse &amp; Synthèse</span></div>
+            <div class="softskill-item reveal reveal-delay-1" role="listitem"><span class="softskill-icon" aria-hidden="true">📋</span><span class="softskill-name">Rigueur &amp; Organisation</span></div>
+            <div class="softskill-item reveal reveal-delay-2" role="listitem"><span class="softskill-icon" aria-hidden="true">🔍</span><span class="softskill-name">Curiosité intellectuelle</span></div>
+            <div class="softskill-item reveal" role="listitem"><span class="softskill-icon" aria-hidden="true">🔄</span><span class="softskill-name">Capacité d'adaptation</span></div>
+            <div class="softskill-item reveal reveal-delay-1" role="listitem"><span class="softskill-icon" aria-hidden="true">🧘</span><span class="softskill-name">Intelligence émotionnelle</span></div>
+          </div>
+        </div>
+      </section>
+    </div><!-- /page-parcours -->
+
+
+    <!-- ======================== PAGE PROJETS ======================== -->
+    <div id="page-projets" class="page" aria-label="Page Projets et Galerie">
+      <header class="projets-hero">
+        <div class="container">
+          <span class="label label-gold">Réalisations</span>
+          <h1>Projets &amp; Galerie</h1>
+          <p>Des initiatives concrètes au service de l'insertion et de l'évolution professionnelle.</p>
+        </div>
+      </header>
+
+      <section class="section" style="background:var(--white)" aria-labelledby="projets-title">
+        <div class="container">
+          <div class="text-center" style="margin-bottom:2rem">
+            <span class="label">Mes projets</span>
+            <h2 id="projets-title" class="section-title">Initiatives &amp; Ateliers</h2>
+            <div class="divider divider-center" role="presentation"></div>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Filtrer les projets">
+            <button class="filter-btn active" data-filter="all" onclick="filterProjets(this,'all')" aria-pressed="true">Tous</button>
+            <button class="filter-btn" data-filter="atelier" onclick="filterProjets(this,'atelier')" aria-pressed="false">Ateliers</button>
+            <button class="filter-btn" data-filter="accompagnement" onclick="filterProjets(this,'accompagnement')" aria-pressed="false">Accompagnement</button>
+            <button class="filter-btn" data-filter="digital" onclick="filterProjets(this,'digital')" aria-pressed="false">Digital</button>
+          </div>
+          <div class="projets-grid" id="projets-grid" role="list">
+
+            <article class="projet-card" data-cat="atelier" role="listitem" aria-label="Projet: Atelier CV et LinkedIn">
+              <img class="projet-img"
+                   src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop&q=70"
+                   alt="Atelier collectif de rédaction de CV autour d'une table" width="600" height="200" loading="lazy" />
+              <div class="projet-body">
+                <div class="projet-cat">Atelier collectif</div>
+                <h3>CV &amp; LinkedIn optimisés</h3>
+                <p>Animation d'un atelier collectif d'optimisation des CVs et profils LinkedIn pour renforcer la visibilité des candidats sur le marché.</p>
+              </div>
+              <div class="projet-footer">
+                <div class="projet-tags" role="list" aria-label="Technologies et méthodes utilisées">
+                  <span class="projet-tag" role="listitem">Canva</span>
+                  <span class="projet-tag" role="listitem">LinkedIn</span>
+                  <span class="projet-tag" role="listitem">Groupe 8 pers.</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="projet-card" data-cat="accompagnement" role="listitem" aria-label="Projet: Parcours de reconversion accompagné">
+              <img class="projet-img"
+                   src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&auto=format&fit=crop&q=70"
+                   alt="Entretien individuel d'accompagnement professionnel" width="600" height="200" loading="lazy" />
+              <div class="projet-body">
+                <div class="projet-cat">Accompagnement individuel</div>
+                <h3>Parcours de reconversion</h3>
+                <p>Suivi individuel d'un bénéficiaire en reconversion : diagnostic, plan d'action, identification des formations, suivi bi-mensuel sur 6 mois.</p>
+              </div>
+              <div class="projet-footer">
+                <div class="projet-tags" role="list" aria-label="Méthodes utilisées">
+                  <span class="projet-tag" role="listitem">CEP</span>
+                  <span class="projet-tag" role="listitem">Plan d'action</span>
+                  <span class="projet-tag" role="listitem">Suivi 6 mois</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="projet-card" data-cat="digital" role="listitem" aria-label="Projet: Cartographie des ressources numériques emploi">
+              <img class="projet-img"
+                   src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&auto=format&fit=crop&q=70"
+                   alt="Ordinateur portable avec outils numériques de recherche d'emploi" width="600" height="200" loading="lazy" />
+              <div class="projet-body">
+                <div class="projet-cat">Outil digital</div>
+                <h3>Cartographie des ressources emploi</h3>
+                <p>Création d'un guide numérique interactif recensant les plateformes, outils et ressources pour optimiser la recherche d'emploi dans la région.</p>
+              </div>
+              <div class="projet-footer">
+                <div class="projet-tags" role="list" aria-label="Outils utilisés">
+                  <span class="projet-tag" role="listitem">Notion</span>
+                  <span class="projet-tag" role="listitem">Outils RH</span>
+                  <span class="projet-tag" role="listitem">Guide</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="projet-card" data-cat="atelier" role="listitem" aria-label="Projet: Atelier entretien de recrutement">
+              <img class="projet-img"
+                   src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=600&auto=format&fit=crop&q=70"
+                   alt="Simulation d'entretien d'embauche en groupe" width="600" height="200" loading="lazy" />
+              <div class="projet-body">
+                <div class="projet-cat">Atelier simulation</div>
+                <h3>Préparer son entretien</h3>
+                <p>Ateliers de simulation d'entretiens de recrutement avec mises en situation, feedbacks constructifs et techniques de communication non-verbale.</p>
+              </div>
+              <div class="projet-footer">
+                <div class="projet-tags" role="list" aria-label="Méthodes utilisées">
+                  <span class="projet-tag" role="listitem">Jeu de rôle</span>
+                  <span class="projet-tag" role="listitem">Feedback</span>
+                  <span class="projet-tag" role="listitem">Communication</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="projet-card" data-cat="accompagnement" role="listitem" aria-label="Projet: Diagnostic et plan d'action personnalisé">
+              <img class="projet-img"
+                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&fit=crop&q=70"
+                   alt="Analyse de documents professionnels et plan d'action" width="600" height="200" loading="lazy" />
+              <div class="projet-body">
+                <div class="projet-cat">Diagnostic professionnel</div>
+                <h3>Bilan &amp; Plan d'action</h3>
+                <p>Élaboration de diagnostics de situation complets et définition de plans d'action individualisés avec indicateurs de progression mesurables.</p>
+              </div>
+              <div class="projet-footer">
+                <div class="projet-tags" role="list" aria-label="Méthodes utilisées">
+                  <span class="projet-tag" role="listitem">Bilan</span>
+                  <span class="projet-tag" role="listitem">KPI</span>
+                  <span class="projet-tag" role="listitem">Individuel</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="projet-card" data-cat="digital" role="listitem" aria-label="Projet: Veille emploi et marché du travail">
+              <img class="projet-img"
+                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=70"
+                   alt="Tableau de bord analytique pour veille marché emploi" width="600" height="200" loading="lazy" />
+              <div class="projet-body">
+                <div class="projet-cat">Veille stratégique</div>
+                <h3>Tableau de veille emploi</h3>
+                <p>Mise en place d'un système de veille régulière sur les tendances du marché de l'emploi régional pour mieux orienter les bénéficiaires.</p>
+              </div>
+              <div class="projet-footer">
+                <div class="projet-tags" role="list" aria-label="Outils utilisés">
+                  <span class="projet-tag" role="listitem">Veille</span>
+                  <span class="projet-tag" role="listitem">Analyse</span>
+                  <span class="projet-tag" role="listitem">Marché emploi</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Galerie -->
+      <section class="section gallery-section" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="text-center">
+            <span class="label label-gold">Galerie</span>
+            <h2 id="gallery-title" class="section-title" style="color:#fff">Moments professionnels</h2>
+            <div class="divider divider-center" role="presentation"></div>
+          </div>
+          <div class="gallery-grid" role="list">
+            <div class="gallery-item reveal" role="listitem" tabindex="0" aria-label="Photo 1: Réunion d'équipe professionnelle">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&auto=format&fit=crop&q=70"
+                   alt="Réunion d'équipe professionnelle autour d'une table" width="500" height="375" loading="lazy" />
+              <div class="gallery-overlay" aria-hidden="true">🔍</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Photo 2: Formation en salle">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=70"
+                   alt="Formation en salle avec tableau et participants" width="500" height="375" loading="lazy" />
+              <div class="gallery-overlay" aria-hidden="true">🔍</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-2" role="listitem" tabindex="0" aria-label="Photo 3: Entretien individuel">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=70"
+                   alt="Entretien individuel conseiller et bénéficiaire" width="500" height="375" loading="lazy" />
+              <div class="gallery-overlay" aria-hidden="true">🔍</div>
+            </div>
+            <div class="gallery-item reveal" role="listitem" tabindex="0" aria-label="Photo 4: Atelier collectif numérique">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&auto=format&fit=crop&q=70"
+                   alt="Participants à un atelier numérique collectif" width="500" height="375" loading="lazy" />
+              <div class="gallery-overlay" aria-hidden="true">🔍</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-1" role="listitem" tabindex="0" aria-label="Photo 5: Travail de terrain">
+              <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&auto=format&fit=crop&q=70"
+                   alt="Travail en extérieur et terrain" width="500" height="375" loading="lazy" />
+              <div class="gallery-overlay" aria-hidden="true">🔍</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-2" role="listitem" tabindex="0" aria-label="Photo 6: Coaching professionnel">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&auto=format&fit=crop&q=70"
+                   alt="Session de coaching professionnel" width="500" height="375" loading="lazy" />
+              <div class="gallery-overlay" aria-hidden="true">🔍</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!-- /page-projets -->
+
+    <!-- ======================== PAGE CONTACT ======================== -->
+    <div id="page-contact" class="page" aria-label="Page Contact">
+      <header class="contact-hero">
+        <div class="container">
+          <span class="label label-gold">Parlons-nous</span>
+          <h1>Prendre contact</h1>
+          <p>Une opportunité, un projet, une question ? Je suis à votre écoute.</p>
+        </div>
+      </header>
+
+      <section class="section" style="background:var(--off-white)" aria-labelledby="contact-form-title">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Infos -->
+            <aside class="contact-info-card" aria-label="Informations de contact">
+              <h3>Informations</h3>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="contact-item-label">Localisation</div>
+                  <div class="contact-item-value">Armentières, Hauts-de-France</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">📞</div>
+                <div>
+                  <div class="contact-item-label">Téléphone</div>
+                  <div class="contact-item-value"><a href="tel:+33624275788" style="color:#fff">+33 06 24 27 57 88</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <div class="contact-item-label">Email</div>
+                  <div class="contact-item-value"><a href="mailto:yves.s.pro@gmail.com" style="color:#fff">yves.s.pro@gmail.com</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">🕐</div>
+                <div>
+                  <div class="contact-item-label">Disponibilité</div>
+                  <div class="contact-item-value">Lun–Ven, 9h–18h</div>
+                </div>
+              </div>
+              <div class="contact-social" aria-label="Réseaux sociaux">
+                <a href="#" class="social-btn" aria-label="Profil LinkedIn de Yves Simon">in</a>
+                <a href="mailto:yves.s.pro@gmail.com" class="social-btn" aria-label="Envoyer un email à Yves Simon">✉</a>
+              </div>
+              <div style="margin-top:2rem;padding:1.25rem;background:rgba(232,160,32,.15);border-radius:var(--radius);border:1px solid rgba(232,160,32,.3)">
+                <div style="color:var(--accent);font-weight:700;margin-bottom:.5rem">🎯 Disponible dès maintenant</div>
+                <div style="font-size:.88rem;color:rgba(255,255,255,.7)">En recherche active d'un poste de Conseiller Emploi. Certification RNCP Niv. 5 en cours – juin 2026.</div>
+              </div>
+            </aside>
+
+            <!-- Formulaire -->
+            <div class="contact-form-card">
+              <h2 id="contact-form-title" style="margin-bottom:1.75rem;font-size:1.5rem">Envoyez-moi un message</h2>
+              <form id="contact-form" novalidate aria-label="Formulaire de contact">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="prenom">Prénom <span class="required" aria-label="champ obligatoire">*</span></label>
+                    <input type="text" id="prenom" name="prenom" autocomplete="given-name" required aria-required="true" placeholder="Votre prénom" />
+                    <div class="form-error-msg" id="prenom-error" role="alert" aria-live="polite">Veuillez saisir votre prénom.</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="nom">Nom <span class="required" aria-label="champ obligatoire">*</span></label>
+                    <input type="text" id="nom" name="nom" autocomplete="family-name" required aria-required="true" placeholder="Votre nom" />
+                    <div class="form-error-msg" id="nom-error" role="alert" aria-live="polite">Veuillez saisir votre nom.</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email <span class="required" aria-label="champ obligatoire">*</span></label>
+                  <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="votre@email.com" />
+                  <div class="form-error-msg" id="email-error" role="alert" aria-live="polite">Veuillez saisir un email valide.</div>
+                </div>
+                <div class="form-group">
+                  <label for="telephone">Téléphone</label>
+                  <input type="tel" id="telephone" name="telephone" autocomplete="tel" placeholder="+33 6 XX XX XX XX" />
+                </div>
+                <div class="form-group">
+                  <label for="objet">Objet du message <span class="required" aria-label="champ obligatoire">*</span></label>
+                  <select id="objet" name="objet" required aria-required="true">
+                    <option value="">-- Sélectionnez un objet --</option>
+                    <option value="recrutement">Proposition de recrutement</option>
+                    <option value="collaboration">Collaboration / Partenariat</option>
+                    <option value="accompagnement">Demande d'accompagnement</option>
+                    <option value="information">Demande d'information</option>
+                    <option value="autre">Autre</option>
+                  </select>
+                  <div class="form-error-msg" id="objet-error" role="alert" aria-live="polite">Veuillez sélectionner un objet.</div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message <span class="required" aria-label="champ obligatoire">*</span></label>
+                  <textarea id="message" name="message" required aria-required="true" placeholder="Décrivez votre demande en quelques lignes..." rows="5"></textarea>
+                  <div class="form-error-msg" id="message-error" role="alert" aria-live="polite">Veuillez saisir un message.</div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input type="checkbox" id="rgpd" name="rgpd" required aria-required="true" />
+                    <label for="rgpd">J'accepte que mes données soient utilisées pour répondre à ma demande, conformément au <abbr title="Règlement Général sur la Protection des Données">RGPD</abbr>. <span class="required" aria-label="champ obligatoire">*</span></label>
+                  </div>
+                  <div class="form-error-msg" id="rgpd-error" role="alert" aria-live="polite">Veuillez accepter la politique de confidentialité.</div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem" aria-label="Envoyer le formulaire de contact">
+                  Envoyer le message
+                </button>
+                <div class="form-success" id="form-success" role="alert" aria-live="assertive">
+                  ✅ Message envoyé ! Je vous répondrai dans les meilleurs délais.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!-- /page-contact -->
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" onclick="showPage('accueil')">Yves <span style="color:var(--accent)">Simon</span></a>
+        <p>Conseiller Emploi et Évolution Professionnelle. Disponible pour opportunités en Hauts-de-France et environs.</p>
+      </div>
+      <nav class="footer-col" aria-label="Navigation secondaire">
+        <h4>Navigation</h4>
+        <ul role="list">
+          <li><a href="#" onclick="showPage('accueil')">Accueil</a></li>
+          <li><a href="#" onclick="showPage('parcours')">Formations &amp; Expériences</a></li>
+          <li><a href="#" onclick="showPage('projets')">Projets &amp; Galerie</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul role="list">
+          <li><a href="tel:+33624275788">+33 06 24 27 57 88</a></li>
+          <li><a href="mailto:yves.s.pro@gmail.com">yves.s.pro@gmail.com</a></li>
+          <li><span>Armentières, Hauts-de-France</span></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Yves Simon – Tous droits réservés</span>
+      <span>Certif. RNCP Niv. 5 – OpenClassrooms</span>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Revenir en haut de la page" title="Haut de page">↑</button>
+
+  <script src="./assets/script.js"></script>
+
+</body>
+</html>
